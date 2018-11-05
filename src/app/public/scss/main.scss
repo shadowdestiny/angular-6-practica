@@ -1,0 +1,97 @@
+@import './_partial/vars/fonts';
+@import './_partial/vars/utils';
+html,body{
+  font-family: $font-type;
+}
+body.background{
+  background: #121212;
+  color:$font-color-subtitle;
+}
+h2{
+  font-size: $font-h2-size;
+}
+h3{
+  font-size: $font-h3-size;
+}
+h4{
+  font-size: $font-h4-size;
+}
+.vertical-text {
+  transform: rotate(-90deg);
+  transform-origin: left top 0;
+}
+.shadow-img{
+  -webkit-box-shadow: -1px 0px 52px 8px rgba(0,0,0,0.75);
+  -moz-box-shadow: -1px 0px 52px 8px rgba(0,0,0,0.75);
+  box-shadow: -1px 0px 52px 8px rgba(0,0,0,0.75);
+}
+.separation{
+  margin-top: $separate;
+}
+.separation-1-bottom{
+  margin-bottom: $separate-1;
+}
+.separation-1{
+  margin-top: $separate-1;
+}
+.separation-2{
+  margin-top: $separate-2;
+}
+.separation-3{
+  margin-top: $separate-3;
+}
+hr.hr-vertical{
+  background: $font-color-subtitle;
+  width: 105px;
+  margin-right: auto;
+  margin-left: auto;
+  transform: rotate(-90deg);
+  position: initial;
+  margin-top: -33px;
+}
+hr.hr-format{
+  background: $font-color-subtitle;
+  width: 95px;
+}
+.normal-text{
+  font-size:$font-size-normal;
+}
+.width-number{
+  width:150px;
+  position: relative;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+input[type='text']{
+  background: transparent;
+  border: 1px solid $font-color-subtitle;
+  height: 40px;
+  text-indent: 10px;
+}
+.button-right{
+  position: relative;
+  top:0px;
+  background: transparent;
+  border:1px solid $font-color-subtitle;
+  height: 40px;
+  width: 44px;
+  color:$font-color-subtitle;
+}
+input::-webkit-input-placeholder {
+  font-size: 10px;
+  line-height: 3;
+}
+.color-opacity-title{
+  color:$home-card-title
+}
+.image-total{
+  width:100%;
+}
+.hr-vertical-global{
+  background: $font-color-subtitle;
+  color: $font-color-subtitle;
+  width: 110px;
+  transform: rotate(-90deg);
+  margin-top: 50px;
+}

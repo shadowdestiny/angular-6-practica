@@ -27,7 +27,10 @@
               "src/assets"
             ],
             "styles": [
-              "src/styles.scss"
+              /*"src/styles.scss"*/
+              "src/scss/euromillions/main.scss",
+              "src/scss/euromillions/main_v2.scss",
+              "src/scss/euromillions/jquery.countdownTimer.scss"
             ],
             "scripts": []
           },

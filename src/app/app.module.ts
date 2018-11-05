@@ -19,6 +19,9 @@ import { SessionStorageService } from 'ngx-webstorage';
 import { AuthHomeComponent } from './auth/home/auth-home.component';
 import { AfterLoginActionsService } from './common/services/after-login-actions.service';
 import { SingleVehicleComponent } from './public/vehicles/single-vehicle/single-vehicle.component';
+import { MillonComponent } from './public/millon/millon.component';
+import { HeaderMillonComponent } from './common/header-millon/header-millon.component';
+import { FooterMillonComponent } from './common/footer-millon/footer-millon.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +37,10 @@ import { SingleVehicleComponent } from './public/vehicles/single-vehicle/single-
     GenerateImageUrlPipe,
     GetFirstCharPipe,
     FilterByPipe,
-    SingleVehicleComponent
+    SingleVehicleComponent,
+    MillonComponent,
+    HeaderMillonComponent,
+    FooterMillonComponent
   ],
   imports: [
     BrowserModule,

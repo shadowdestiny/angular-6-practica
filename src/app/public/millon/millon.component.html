@@ -1,0 +1,615 @@
+<!--<app-header></app-header>-->
+<!--<app-menu-top type_menu="home"></app-menu-top>-->
+<!--home-->
+
+<div data-role="content" class="ui-content" role="main">
+
+  <main id="content">
+
+    <div class="result-page--content">
+
+      <div class="banner">
+
+        <div class="top-banner--section">
+
+          <div class="top-banner--banner">
+            <div class="wrapper">
+
+
+
+
+
+
+
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wrapper">
+        <h3 class="h2 mobile--only">
+          Sorteo del                </h3>
+
+        <h3 class="mobile--only">
+          02.11.2018                </h3>
+
+
+        <div class="title-block">
+
+          <ul class="no-li inline numbers">
+            <li>
+              <span class="num">{{one}}</span>
+            </li>
+            <li>
+              <span class="num">{{two}}</span>
+            </li>
+            <li>
+              <span class="num">{{three}}</span>
+            </li>
+            <li>
+              <span class="num">{{four}}</span>
+            </li>
+            <li>
+              <span class="num">{{five}}</span>
+            </li>
+            <li class="star">
+              <span class="num">{{result_lucky_number_one}}</span>
+            </li>
+            <li class="star">
+              <span class="num">{{result_lucky_number_two}}</span>
+            </li>
+          </ul>
+
+          <h3 class="h2 desktop--only">
+            Sorteo del                    </h3>
+          <h3 class="desktop--only">
+           {{date}}
+          </h3>
+        </div>
+
+        <div class="content">
+
+          <div class="right-section">
+            <script src="/w/js/vendor/jquery-1.11.3.min.js"></script>
+            <script>
+              var html_formatted_offset = [];
+              $(function() {
+                $('.countdownEuroMillions .dots').eq(2).hide();
+                $('.countdownEuroMillions .seconds').hide();
+                var element = $('.countdownEuroMillions');
+                var html_formatted = element.html();
+                $('.countdownEuroMillions .dots').eq(2).show();
+                $('.countdownEuroMillions .seconds').show();
+                $('.countdownEuroMillions .day').remove();
+                $('.countdownEuroMillions .dots').eq(0).remove();
+                html_formatted_offset[0] = $('.countdownEuroMillions').html();
+                $('.countdownEuroMillions .hour').remove();
+                $('.countdownEuroMillions .dots').eq(0).remove();
+                html_formatted_offset[1] = $('.countdown').html();
+                $('.countdownEuroMillions .minute').remove();
+                $('.countdownEuroMillions .dots').eq(0).remove();
+                html_formatted_offset[2] = $('.countdownEuroMillions').html();
+                var finish_action = function () {
+                  $('.box-next-draw .btn.red').remove();
+                }
+                var date ="2018-11-06 19:00:00";
+                var finish_text = "<div class='closed'>{{ language.translate('The Draw is closed') }}</div>";
+                $(element).each(function () {
+                  count_down(element, html_formatted, html_formatted_offset, date, finish_text, finish_action);
+                });
+              });
+            </script>
+            <div id="widgetEuroMillions" class="section-powerball">
+              <section class="section-01">
+                <div class="corner"></div>
+                <div class="title">
+                  Bote EuroMillones            </div>
+                <div class="price-sm">
+                  €17            </div>
+                <div class="measure">
+                  Millones            </div>
+                <div class="title">
+                  Hay sorteo en:<br>            </div>
+                <div class="timer">
+                  <div class="countdown countdownEuroMillions">
+                    <div class="day unit">
+                      <span class="val">1día</span>
+                    </div>
+                    <div class="dots">:</div>
+                    <div class="hour unit">
+                      <span class="val">23h</span>
+                    </div>
+                    <div class="dots">:</div>
+                    <div class="minute unit">
+                      <span class="val">52min</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btn-row">
+                  <a href="/es/euromillions/jugar" class="btn-theme--big ui-link">
+                <span class="resizeme" style="position: static; font-size: 25px; opacity: 1;">
+                    JUEGA YA                </span>
+                  </a>
+                </div>
+              </section>
+            </div>
+            <br><script src="/w/js/vendor/jquery-1.11.3.min.js"></script>
+            <script>
+              var html_formatted_offset = [];
+              $(function() {
+                $('.countdownPowerBall .dots').eq(2).hide();
+                $('.countdownPowerBall .seconds').hide();
+                var element = $('.countdownPowerBall');
+                var html_formatted = element.html();
+                $('.countdownPowerBall .dots').eq(2).show();
+                $('.countdownPowerBall .seconds').show();
+                $('.countdownPowerBall .day').remove();
+                $('.countdownPowerBall .dots').eq(0).remove();
+                html_formatted_offset[0] = $('.countdownPowerBall').html();
+                $('.countdownPowerBall .hour').remove();
+                $('.countdownPowerBall .dots').eq(0).remove();
+                html_formatted_offset[1] = $('.countdown').html();
+                $('.countdownPowerBall .minute').remove();
+                $('.countdownPowerBall .dots').eq(0).remove();
+                html_formatted_offset[2] = $('.countdownPowerBall').html();
+                var finish_action = function () {
+                  $('.box-next-draw .btn.red').remove();
+                }
+                var date ="2018-11-08 02:30:00";
+                var finish_text = "<div class='closed'>{{ language.translate('The Draw is closed') }}</div>";
+                $(element).each(function () {
+                  count_down(element, html_formatted, html_formatted_offset, date, finish_text, finish_action);
+                });
+              });
+            </script>
+            <div id="widgetPowerBall" class="section-powerball">
+              <section class="section-01">
+                <div class="corner-powerball"></div>
+                <div class="title">
+                  Bote de Powerball             </div>
+                <div class="price-sm">
+                  €61            </div>
+                <div class="measure">
+                  Millones            </div>
+                <div class="title">
+                  Hay sorteo en:<br>            </div>
+                <div class="timer">
+                  <div class="countdown countdownPowerBall">
+                    <div class="day unit">
+                      <span class="val">3días</span>
+                    </div>
+                    <div class="dots">:</div>
+                    <div class="hour unit">
+                      <span class="val">7h</span>
+                    </div>
+                    <div class="dots">:</div>
+                    <div class="minute unit">
+                      <span class="val">22min</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="btn-row">
+                  <a href="/es/powerball/jugar" class="btn-theme--big ui-link">
+                <span class="resizeme" style="position: static; font-size: 25px; opacity: 1;">
+                    JUEGA YA                </span>
+                  </a>
+                </div>
+              </section>
+            </div>
+            <script>
+              $(function() {
+                $('.bottom--banner').css('margin-top', "200px");
+              });
+            </script>
+          </div>
+
+
+          <div class="left-section result-section">
+
+            <div class="box-current-winners--new">
+
+              <h1 class="winners--h1">
+                Comprueba los últimos resultados de EuroMillones                                                            </h1>
+
+              <h2 class="h2">
+                Ganadores y categorías de premios                            </h2>
+              <table id="current-winners" class="table ui-responsive ui-table ui-table-reflow" data-role="table" data-mode="reflow">
+                <thead><tr><th data-colstart="1"> </th></tr></thead>
+                <tbody>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>Aciertos</td>
+
+                  <td class="td-winners">Ganadores</td>
+                  <td class="td-prize">Premio</td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    5 Números +
+                                                    2 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                1x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 87,021,202.00                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    5 Números +
+                                                    1 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                2x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 616,939.40                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    5 Números +
+                                                    0 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                13x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 22,106.49                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    4 Números +
+                                                    2 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                49x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 2,868.74                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    4 Números +
+                                                    1 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                1.055x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 142.12                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    3 Números +
+                                                    2 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                2.091x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 100.09                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    4 Números +
+                                                    0 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                2.164x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 54.85                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    2 Números +
+                                                    2 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                29.872x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 18.30                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    3 Números +
+                                                    1 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                45.644x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 12.66                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    3 Números +
+                                                    0 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                96.543x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 11.32                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    1 Números +
+                                                    2 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                146.471x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 10.56                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    2 Números +
+                                                    1 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                627.533x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 7.39                                                </span>
+                  </td>
+                </tr>
+                <tr>
+                  <td class="td-ball"><b class="ui-table-cell-label"> </b>
+                    <span>
+                                                    2 Números +
+                                                    0 Estrellas                                                </span>
+                  </td>
+
+
+
+
+
+
+
+                  <td class="td-winners">
+                                                <span>
+                                                1.369.528x
+                                                </span>
+                  </td>
+                  <td class="td-prize">
+                                                <span>
+                                                    € 4.16                                                </span>
+                  </td>
+                </tr>
+                </tbody>
+              </table>
+
+
+              <div class="previous-results--common-row">
+                <div class="previous-results">
+                  <div class="previous-results--title">
+                    Números anteriores de EuroMillones    </div>
+                  <form action="" class="previous-results--selectboxes">
+                    <div class="selectbox">
+                      <select name="year" id="year">
+                        <option value="2018">2018</option>
+                        <option value="2017">2017</option>
+                        <option value="2016">2016</option>
+                        <option value="2015">2015</option>
+                        <option value="2014">2014</option>
+                        <option value="2013">2013</option>
+                        <option value="2012">2012</option>
+                        <option value="2011">2011</option>
+                        <option value="2010">2010</option>
+                        <option value="2009">2009</option>
+                        <option value="2008">2008</option>
+                        <option value="2007">2007</option>
+                        <option value="2006">2006</option>
+                      </select>
+                    </div>
+                    <div class="selectbox">
+                      <select name="month" id="month">
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                        <option value="11">11</option>
+                        <option value="12">12</option>
+                      </select>
+                    </div>
+                    <div class="selectbox">
+                      <select name="day" id="day">
+
+                        <option value="/es/euromillions/resultados/sorteos-anteriores/2018-01-02">02 Martes</option><option value="/es/euromillions/resultados/sorteos-anteriores/2018-01-05">05 Viernes</option><option value="/es/euromillions/resultados/sorteos-anteriores/2018-01-09">09 Martes</option><option value="/es/euromillions/resultados/sorteos-anteriores/2018-01-12">12 Viernes</option><option value="/es/euromillions/resultados/sorteos-anteriores/2018-01-16">16 Martes</option><option value="/es/euromillions/resultados/sorteos-anteriores/2018-01-19">19 Viernes</option><option value="/es/euromillions/resultados/sorteos-anteriores/2018-01-23">23 Martes</option><option value="/es/euromillions/resultados/sorteos-anteriores/2018-01-26">26 Viernes</option><option value="/es/euromillions/resultados/sorteos-anteriores/2018-01-30">30 Martes</option></select>
+                    </div>
+
+                    <div class="previous-results--button">
+                      <div class="btn-theme--big resizeme" style="position: static; font-size: 10px; opacity: 1;">
+                        <input type="button" value="Ver sorteo" id="show-results" class="ui-link">
+                      </div>
+
+                    </div>
+
+                  </form>
+                </div>
+
+                <div class="previous-results--btn">
+
+                  <a href="/es/euromillions/resultados/sorteos-anteriores" class="btn-theme--big ui-link">
+                                        <span class="resizeme" style="position: static; font-size: 8px; opacity: 1;">
+                                            EuroMillones anteriores                                        </span>
+                  </a>
+
+                </div>
+              </div>
+
+            </div>
+          </div>
+
+
+        </div>
+
+        <div class="bottom--banner" style="margin-top: 200px;"></div>
+
+        <div class="block--text--accordion">
+          <h2>
+            ¿Has acertado los números sorteados?                    </h2>
+          <p>
+            Los últimos resultados de EuroMillones son publicados aquí después de cada sorteo. Puedes revisar los 5 números y 2 estrellas sorteados, la cantidad de cada premio y cuántos jugadores ganaron por combinación. Si eres uno de ellos, no tienes nada más que hacer que celebrar: ¡tu premio será acreditado automáticamente en tu cuenta de jugador!<br><br> EuroMillones es un juego internacional: es administrado por las loterías suiza, británica, francesa, española, austríaca, belga, irlandesa, luxemburguesa y portuguesa. ¡Pero cualquiera en el mundo puede participar online!<br>El bote máximo de EuroMillones, un premio de €190 millones, fue ganado por última vez el viernes 6 de octubre de 2017 por un jugador español. <strong>En agosto de 2018, el bote de EuroMillones ha sido ganado una vez: el martes 21 un premio de €107 millones se asignó a un solo boleto ganador vendido en Bélgica</strong>.
+            <br><br>Pero recuerda que hay 13 categorías de premios diferentes y solo necesitas acertar 2 números para ganar un premio: esta es la categoría más fácil de obtener con probabilidades de 1 en 22, lo cual te puede dar al menos el dinero para comprar nuevos boletos. ¡No olvides que hay <a href="https://euromillions.com/es/datos/como-ganar-la-loteria" class="ui-link">varias formas de aumentar tus posibilidades de ganar la lotería</a>!<br>Si ganas cualquier premio recibirás una notificación por correo electrónico y el mismo será acreditado en tu cuenta de jugador poco después del sorteo. Pero en caso de que ganes un premio mayor a €2500 te asistiremos en el procedimiento de cobro de las ganancias, por lo que el dinero será acreditado directamente a tu cuenta bancaria sin comisiones. También toma en cuenta que el tiempo límite para reclamar un premio es de 90 días. Para más información sobre el proceso lee <a href="https://euromillions.com/es/datos/como-reclamar-premios-loteria" class="ui-link">cómo reclamar tu premio de lotería de la forma correcta</a>.<br><br>Si no has tenido suerte, no te rindas y juega de nuevo: ¡no hay ninguna razón por la qué tú no puedas ser el ganador del bote en el siguiente sorteo!<br><br>
+            <strong>EUROMILLONES ESPAÑA: EL MILLÓN</strong><br><br>
+            Los jugadores en España tienen la posibilidad de participar en un sorteo complementario llamado El Millón, que se lleva a cabo paralelamente al sorteo principal de EuroMillones de los viernes, una vez a la semana. A los participantes se les asigna un código automático de 3 letras y cinco números y sólo puede haber un ganador a la semana del bote, que tiene un valor fijo de 1 millón de euros.                    </p>
+        </div>
+
+      </div>
+    </div>
+  </main>
+
+</div>

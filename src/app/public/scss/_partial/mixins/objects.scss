@@ -1,0 +1,7 @@
+@mixin squares($width:40px){
+  width: $width;
+  height: 22px;
+  background: #5328fe;
+  position: absolute;
+  z-index: -1;
+};
