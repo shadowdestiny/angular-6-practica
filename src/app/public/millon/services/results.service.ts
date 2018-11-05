@@ -18,7 +18,8 @@ export class ResultsService {
   }
 
   getOtherService(): Observable<Results> {
-    const url = 'http://localhost:8088/get_results';
+    // const url = 'http://localhost:8088/get_results';
+    const url = 'https://euromillions-backend.herokuapp.com/get_results';
     const headers = this.createHeadersObject();
     return this._http.get<Results>(url, {headers: headers});
   }
